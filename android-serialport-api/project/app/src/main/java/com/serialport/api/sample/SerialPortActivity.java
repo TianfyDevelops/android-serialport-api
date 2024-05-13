@@ -14,7 +14,7 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package com.serialport.api.sample;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +26,9 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
-import android_serialport_api.SerialPort;
+import com.serialport.api.R;
+
+import com.serialport.api.SerialPort;
 
 public abstract class SerialPortActivity extends Activity {
 

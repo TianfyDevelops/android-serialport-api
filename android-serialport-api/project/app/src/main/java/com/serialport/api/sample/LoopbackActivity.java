@@ -14,12 +14,14 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package com.serialport.api.sample;
 
 import java.io.IOException;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.serialport.api.R;
 
 public class LoopbackActivity extends SerialPortActivity {
 

@@ -14,7 +14,7 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package com.serialport.api.sample;
 
 import java.io.IOException;
 
@@ -23,6 +23,8 @@ import android.view.KeyEvent;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
+
+import com.serialport.api.R;
 
 public class ConsoleActivity extends SerialPortActivity {
 

@@ -14,12 +14,14 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package com.serialport.api.sample;
 
 import java.io.IOException;
 import java.util.Arrays;
 
 import android.os.Bundle;
+
+import com.serialport.api.R;
 
 public class Sending01010101Activity extends SerialPortActivity {
 

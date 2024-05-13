@@ -14,7 +14,7 @@
  * limitations under the License. 
  */
 
-package android_serialport_api.sample;
+package com.serialport.api.sample;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,8 +22,9 @@ import java.security.InvalidParameterException;
 
 
 import android.content.SharedPreferences;
-import android_serialport_api.SerialPort;
-import android_serialport_api.SerialPortFinder;
+
+import com.serialport.api.SerialPort;
+import com.serialport.api.SerialPortFinder;
 
 public class Application extends android.app.Application {
 
@@ -33,7 +34,7 @@ public class Application extends android.app.Application {
 	public SerialPort getSerialPort() throws SecurityException, IOException, InvalidParameterException {
 		if (mSerialPort == null) {
 			/* Read serial port parameters */
-			SharedPreferences sp = getSharedPreferences("android_serialport_api.sample_preferences", MODE_PRIVATE);
+			SharedPreferences sp = getSharedPreferences("main.java.android_serialport_api.sample_preferences", MODE_PRIVATE);
 			String path = sp.getString("DEVICE", "");
 			int baudrate = Integer.decode(sp.getString("BAUDRATE", "-1"));
 
